@@ -2,43 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Preethika's Portfolio</title>
+  <title>Preethika’s Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Preethika's Portfolio</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <h1 class="logo">Preethika</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
+  <section id="hero">
+    <h2>Hi, I’m Preethika 👋</h2>
+    <p>Data Analyst & Aspiring Developer</p>
+    <button id="scrollProjects">View My Work</button>
+  </section>
+
   <section id="about">
     <h2>About Me</h2>
-    <p>I am learning  Tableau, JavaScript, Node.js, and MySQL. This portfolio showcases my projects and skills.</p>
+    <p>I specialize in Excel dashboards, Tableau visualizations, and backend projects with Node.js & MySQL.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
+    <div class="project-card">
       <h3>Hospital Management System</h3>
-      <p>Backend with Node.js + MySQL, includes ER diagrams and API testing.</p>
+      <p>Node.js + MySQL backend with ER diagrams and API testing.</p>
     </div>
-    <div class="project">
-      <h3>Data Dashboards</h3>
-      <p>Interactive dashboards built with Excel and Tableau.</p>
+    <div class="project-card">
+      <h3>Data Dashboard</h3>
+      <p>Interactive Excel & Tableau dashboards for classification analysis.</p>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: preethikam18@gmail.com</p>
-    <button id="themeToggle">Toggle Theme</button>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Excel Analytics</li>
+      <li>Tableau Visualization</li>
+      <li>JavaScript & Node.js</li>
+      <li>MySQL Database</li>
+    </ul>
   </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Preethika | Built with ❤️</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
